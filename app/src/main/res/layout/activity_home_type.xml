@@ -33,7 +33,7 @@
         android:id="@+id/imgSemiHome"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/semiHome"
+        android:src="@drawable/semihome"
         app:layout_constraintEnd_toStartOf="@+id/imgCondo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
