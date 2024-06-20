@@ -1,6 +1,9 @@
 package com.example.a2_300727537
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,6 +29,18 @@ class ListingActivity : AppCompatActivity() {
             layoutManager = GridLayoutManager(this@ListingActivity,2)
             adapter = ListingAdapter(listings)
         }
+
+
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.app_bar_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.miHome -> startActivity(Intent(this, ListingActivity::class.java))
+        }
+        return true
     }
 
 }
