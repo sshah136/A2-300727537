@@ -4,5 +4,5 @@ data class Listing (
     val title: String,
     val address: String,
     val price: Double,
-    val image: String
+    val imageURL: String
 )
