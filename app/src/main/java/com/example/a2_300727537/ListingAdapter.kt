@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.a2_300727537.model.Listing
 import com.squareup.picasso.Picasso
 
-class ListingAdapter(private val listings: ArrayList<Listing>) : RecyclerView.Adapter<ListingAdapter.ViewHolder>() {
+class ListingAdapter(private val listings: ArrayList<Listing>) :
+    RecyclerView.Adapter<ListingAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val listing = listings[position]
         Picasso.get().load(listing.imageURL).into(holder.image)

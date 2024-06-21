@@ -3,28 +3,23 @@
 
     <item
         android:id="@+id/miApt"
-        android:title="@string/appartment"
-        />
+        android:title="@string/appartment" />
 
     <item
         android:id="@+id/miHome"
-        android:title="@string/detached_home"
-        />
+        android:title="@string/detached_home" />
 
     <item
         android:id="@+id/miSemiHome"
-        android:title="@string/semi_detached_home"
-        />
+        android:title="@string/semi_detached_home" />
 
     <item
         android:id="@+id/miCondo"
-        android:title="@string/condominium"
-        />
+        android:title="@string/condominium" />
 
     <item
         android:id="@+id/miTownHome"
-        android:title="@string/town_house"/>
-
+        android:title="@string/town_house" />
 
 
 </menu>
